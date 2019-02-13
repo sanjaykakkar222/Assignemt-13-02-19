@@ -1,0 +1,192 @@
+<!Doctype html>
+
+<html>
+
+<head>
+
+    <title>
+
+        MyLayout
+
+    </title>
+
+</head>
+
+<body>
+
+    <header class="headerlogo">
+        <h2 class="display">TechnologyNews</h2>
+
+        <a class="right" href="User">SanjayKakkar </a>
+
+        <img class="profilePic" src="employee.png" height="40" alt="You" </img>
+
+    </header>
+
+    <div id="main">
+
+        <div style="background-color:rgb(80, 127, 255);">
+
+            <form action="Thankyou.html">
+
+                <h1 align="center">Register...</h1>
+
+                <label>FirstName</label>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+
+                <input type="text" name="firstname">
+
+                <br>
+                <br>
+
+                <label>LastName</label>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+
+                <input type="text" name="lastname">
+                <br>
+                <br>
+
+                <label>DOB</label> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+
+                <input type="date" name="DOB">
+                <br>
+                <br>
+
+                <label class=textAlign>Full Address:</label> &nbsp; &nbsp;
+
+                <textarea name="message" style="width:150px; height:50px;"></textarea>
+
+                <br>
+                <br>
+
+                <label class=textAlign>Items Want: </label>&nbsp; &nbsp; &nbsp;
+
+                <textarea rows="4" columns="2" placeholder="oneItem             TwoItem             three item"></textarea>
+                <br>
+                <br>
+
+                <label>Choose Any:</label> &nbsp; &nbsp;
+
+                <input type="radio" name="Choose1" value="Choose1" checked>Choose1
+                <br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+
+                <input type="radio" name="Choose2" value="Choose2">Choose2
+                <br> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+
+                <input type="radio" name="Choose3" value="Choose3">Choose3
+                <br>
+                <br>
+
+                <label>Incement No:</label> &nbsp;&nbsp; &nbsp;
+
+                <input type="number" min="10" max="100">
+
+                <br>
+                <br> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+
+                <input align="center" type="checkbox" name="vehicle" value="Bike"> Agree With Terms and condition
+                <br>
+                <p align=center>
+                    <button type="submit" onclick="">Register</button>
+                </p>
+            </form>
+
+            <br>
+            <br>
+
+            <p align=center>
+
+            </p>
+
+        </div>
+
+        <div style="background-color:rgb(217, 173, 230);">
+
+            <div class="scroll">
+
+                <p>
+
+                    Machine learning tasks are classified into several broad categories. In supervised learning, the algorithm builds a mathematical model from a set of data that contains both the inputs and the desired outputs. For example, if the task were determining whether an image contained a certain object, the training data for a supervised learning algorithm would include images with and without that object (the input), and each image would have a label (the output) designating whether it contained the object. In special cases, the input may be only partially available, or restricted to special feedback.[clarification needed] Semi-supervised learning algorithms develop mathematical models from incomplete training data, where a portion of the sample input doesn't have labels. Classification algorithms and regression algorithms are types of supervised learning. Classification algorithms are used when the outputs are restricted to a limited set of values. For a classification algorithm that filters emails, the input would be an incoming email, and the output would be the name of the folder in which to file the email. For an algorithm that identifies spam emails, the output would be the prediction of either "spam" or "not spam", represented by the Boolean values true and false. Regression algorithms are named for their continuous outputs, meaning they may have any value within a range. Examples of a continuous value are the temperature, length, or price of an object. In unsupervised learning, the algorithm builds a mathematical model from a set of data which contains only inputs and no desired output labels. Unsupervised learning algorithms are used to find structure in the data, like grouping or clustering of data points. Unsupervised learning can discover patterns in the data, and can group the inputs into categories, as in feature learning. Dimensionality reduction is the process of reducing the number of "features", or inputs, in a set of data. Active learning algorithms access the desired outputs (training labels) for a limited set of inputs based on a budget, and optimize the choice of inputs for which it will acquire training labels. When used interactively, these can be presented to a human user for labeling. Reinforcement learning algorithms are given feedback in the form of positive or negative reinforcement in a dynamic environment, and are used in autonomous vehicles or in learning to play a game against a human opponent.[2]:3 Other specialized algorithms in machine learning include topic modeling, where the computer program is given a set of natural language documents and finds other documents that cover similar topics. Machine learning algorithms can be used to find the unobservable probability density function in density estimation problems. Meta learning algorithms learn their own inductive bias based on previous experience. In developmental robotics, robot learning algorithms generate their own sequences of learning experiences, also known as a curriculum, to cumulatively acquire new skills through self-guided exploration and social interaction with humans. These robots use guidance mechanisms such as active learning, maturation, motor synergies, and imitation
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="main-wrap">
+
+        <div id="sidebar" </div>
+
+            <div id="content-wrap"></div>
+
+        </div>
+
+        <div class="footer">TechonologyNews
+            <br>someone@gmail.com</div>
+
+</body>
+
+</html>
+
+<style>
+    .headerlogo {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(242, 232, 125);
+        margin-top: -12px;
+    }
+    
+    .display {
+        display: inline;
+    }
+    
+    .right {
+        float: right !important;
+        margin-right: 25px;
+        margin-top: 5px;
+    }
+    
+    .profilePic {
+        float: right;
+        width: 20px;
+        margin-right: 5px;
+        margin-top: 6px;
+    }
+    
+    #main {
+        height: 580px;
+        border: 1px solid gray;
+        display: flex;
+    }
+    
+    #main div {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 1020px;
+        flex: 75;
+    }
+    
+    #main div:nth-of-type(2) {
+        flex-basis: 335px;
+        flex: 25;
+    }
+    
+    .scroll {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 350px;
+        height: 550px;
+        overflow: auto;
+        border: 1px solid gray;
+    }
+    
+    .footer {
+        width: 100%;
+        position: fixed;
+        background-color: red;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
